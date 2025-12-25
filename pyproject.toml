@@ -1,0 +1,73 @@
+[project]
+name = "copyFilePaths"
+# 脚本英文名（必填项）
+
+version = "0.1.0"
+# 脚本版本（必填项）
+
+description = "选中文件后,运行脚本,可批量复制文件路径到系统剪切板"
+# 脚本描述（必填项）
+
+readme = "README.md"
+# 脚本自述文件（必填项、仅限markdown文档）
+
+requires-python=">=3.8"
+# powershell版本、建议兼容5.1版
+
+dependencies = []
+# 脚本依赖（无依赖为空、python脚本填、其他脚本为空）
+
+[project.configs]
+display_name="复制完整路径"
+# 脚本中文名(必填项)
+
+script_id = "4d80a64a-0a41-4791-89bc-319e3edc333f"
+# 脚本id（必填项，限uuid）
+
+language = "python"
+# 脚本语言（必填项 python / bat / powershell / aotuhotkey）
+
+icon = "image/logo.png"
+# 脚本图标（必填项 相对路径）
+
+startup_file = "copyFilePaths.py"
+# 脚本启动文件(必填项)
+
+charge = '免费'
+# 脚本收费，可选项（免费、付费、AI、目前仅支持发布免费脚本）、可为空
+
+is_gui = false
+# 是否有GUI界面
+
+
+[project.context]  # 右键上下文配置
+is_context_start = true
+# 是否支持从右键上下文中启动脚本
+
+context_args = ["files","directory"]
+# 菜单类型、列表类型可多个参数、可选参数如下
+# files（文件右键菜单、启动时默认传参所选文件路径）
+# directory（文件夹右键菜单、启动时默认传参所选文件夹路径）
+# background（背景右键菜单，启动时默认传参当前背景页资源管理器路径）
+
+context_args_filter= []
+# 菜单参数文件后缀过滤、当context_args中包含files时生效、为空为不过滤 示例：[".txt",'.doc'] 只会在txt和doc上显示启动上下文
+
+
+[project.shortcut]  # 快捷键配置
+is_shortcut_start = true
+# 是否正常快捷键启动脚本
+
+shortcut_args = "select_files_and_folders_path"
+# 快捷键启动脚本传参类型、可选如下
+# select_files_and_folders_path（当前资源管理器中选中的文件和文件夹路径)
+# select_files_path（当前资源管理器中选中的文件路径）
+# select_folders_path（当前资源管理器中选择文件夹路径）
+# active_explorer_path（Windows资源管理器中当前活动文件夹标签路径)
+# ""（空字符串不传递参数）
+
+shortcut_args_filter= []
+# 快捷键参数文件后缀过滤、当shortcut_args中包含select_files_path时生效、为空为不过滤 示例：[".txt",'.doc'] 只会在传递txt和doc文件路径启动脚本
+
+[project.quick_text]  # 快捷文本配置
+is_quick_text_start = false

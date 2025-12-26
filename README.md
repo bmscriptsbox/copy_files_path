@@ -1,7 +1,5 @@
 # 📁 文件路径提取器 - 批量复制文件路径到剪贴板
 
-[![Python](https://img.shields.io/badge/Python-3.8%2B-blue.svg)](https://python.org) [![Windows](https://img.shields.io/badge/Windows-7%2B-green.svg)](https://microsoft.com/windows) [![License](https://img.shields.io/badge/License-Free-red.svg)](#license) [![版本](https://img.shields.io/badge/版本-0.0.1-orange.svg)](#changelog)
-
 > 简单易用的文件路径批量处理工具，让文件路径复制变得轻松高效！
 
 ## 🎯 功能介绍

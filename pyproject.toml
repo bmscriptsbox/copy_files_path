@@ -2,7 +2,7 @@
 name = "copyFilePaths"
 # 脚本英文名（必填项）
 
-version = "0.1.0"
+version = "0.1.1"
 # 脚本版本（必填项）
 
 description = "选中文件后,运行脚本,可批量复制文件路径到系统剪切板"
